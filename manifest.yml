@@ -1,0 +1,12 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: DenzelIoT
+  host: DenzelIoT
+  disk_quota: 1024M
+  services:
+  - DenzelIoT-cloudantNoSQLDB
+  - DenzelIoT-iotf-service
+  - availability-monitoring-auto
